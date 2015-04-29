@@ -15,8 +15,9 @@ public class Chambre {
     private String Catégorie;
     private String Tél;
     private Integer Tarif;
-    
-    public Chambre(){}
+  
+    public Chambre() {
+    }
 
     public Integer getId() {
         return Id;

@@ -12,7 +12,7 @@ public class ConnectDB {
 
     private String url = "jdbc:mysql://localhost/";
     private String user = "root";
-    private String passwd = "";
+    private String passwd = "root";
     private String dbName = "hotel";
     private Connection conn;
     private static ConnectDB mycnx;
