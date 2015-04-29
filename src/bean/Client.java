@@ -11,98 +11,97 @@ package bean;
  */
 public class Client {
     
-    private Integer Id;
-    private String Prenom;
-    private String Nom;
-    private String Adresse;
-    private String Ville;
-    private Integer CP;
-    private String Pays;
-    private String Tel;
-    private String Email;
+    private Integer id;
+    private String prenom;
+    private String nom;
+    private String adresse;
+    private String ville;
+    private Integer cp;
+    private String pays;
+    private String tel;
+    private String email;
 
     public Client()
     {}
-    
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(Integer Id) {
-        this.Id = Id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getPrenom() {
-        return Prenom;
+        return prenom;
     }
 
-    public void setPrenom(String Prenom) {
-        this.Prenom = Prenom;
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
     public String getNom() {
-        return Nom;
+        return nom;
     }
 
-    public void setNom(String Nom) {
-        this.Nom = Nom;
+    public void setNom(String nom) {
+        this.nom = nom;
     }
 
     public String getAdresse() {
-        return Adresse;
+        return adresse;
     }
 
-    public void setAdresse(String Adresse) {
-        this.Adresse = Adresse;
+    public void setAdresse(String adresse) {
+        this.adresse = adresse;
     }
 
     public String getVille() {
-        return Ville;
+        return ville;
     }
 
-    public void setVille(String Ville) {
-        this.Ville = Ville;
+    public void setVille(String ville) {
+        this.ville = ville;
     }
 
-    public Integer getCP() {
-        return CP;
+    public Integer getCp() {
+        return cp;
     }
 
-    public void setCP(Integer CP) {
-        this.CP = CP;
+    public void setCp(Integer cp) {
+        this.cp = cp;
     }
 
     public String getPays() {
-        return Pays;
+        return pays;
     }
 
-    public void setPays(String Pays) {
-        this.Pays = Pays;
+    public void setPays(String pays) {
+        this.pays = pays;
     }
 
     public String getTel() {
-        return Tel;
+        return tel;
     }
 
-    public void setTel(String Tel) {
-        this.Tel = Tel;
+    public void setTel(String tel) {
+        this.tel = tel;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override
     public String toString() {
-        return "Client{" + "Id=" + Id + ", Prenom=" + Prenom + ", Nom=" + Nom + ", Adresse=" + Adresse + ", Ville=" + Ville + ", CP=" + CP + ", Pays=" + Pays + ", Tel=" + Tel + ", Email=" + Email + '}';
+        return "Client{" + "id=" + id + ", prenom=" + prenom + ", nom=" + nom + ", adresse=" + adresse + ", ville=" + ville + ", cp=" + cp + ", pays=" + pays + ", tel=" + tel + ", email=" + email + '}';
     }
     
-    
-    
+
+   
 
 }

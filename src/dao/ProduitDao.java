@@ -3,17 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package service;
+package dao;
 
-import dao.FactureDao;
-
- 
+import bean.Produit;
 
 /**
  *
  * @author EL
  */
-public class FactureService extends FactureDao {
+public class ProduitDao extends AbstractDao<Produit> {
     
-     
+     public ProduitDao() {
+        super(Produit.class);
+    }
+    
 }

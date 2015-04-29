@@ -5,7 +5,7 @@
  */
 package service;
 
-import dao.FactureDao;
+import dao.ProduitDao;
 
  
 
@@ -13,7 +13,7 @@ import dao.FactureDao;
  *
  * @author EL
  */
-public class FactureService extends FactureDao {
+public class ProduitService extends ProduitDao {
     
-     
+    
 }
