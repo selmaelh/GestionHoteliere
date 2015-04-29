@@ -14,44 +14,44 @@ import java.util.List;
  */
 public class Reservation {
     
-  private Integer Id;
-  private Date Date_debut;
-  private Date Date_fin;
-  private Integer Nbre_nuits;
+  private Integer id;
+  private Date date_debut;
+  private Date date_fin;
+  private Integer nbre_nuits;
   private List<Consommation> consommations;
   
   public Reservation(){}
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(Integer Id) {
-        this.Id = Id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Date getDate_debut() {
-        return Date_debut;
+        return date_debut;
     }
 
-    public void setDate_debut(Date Date_debut) {
-        this.Date_debut = Date_debut;
+    public void setDate_debut(Date date_debut) {
+        this.date_debut = date_debut;
     }
 
     public Date getDate_fin() {
-        return Date_fin;
+        return date_fin;
     }
 
-    public void setDate_fin(Date Date_fin) {
-        this.Date_fin = Date_fin;
+    public void setDate_fin(Date date_fin) {
+        this.date_fin = date_fin;
     }
 
     public Integer getNbre_nuits() {
-        return Nbre_nuits;
+        return nbre_nuits;
     }
 
-    public void setNbre_nuits(Integer Nbre_nuits) {
-        this.Nbre_nuits = Nbre_nuits;
+    public void setNbre_nuits(Integer nbre_nuits) {
+        this.nbre_nuits = nbre_nuits;
     }
 
     public List<Consommation> getConsommations() {
@@ -64,9 +64,9 @@ public class Reservation {
 
     @Override
     public String toString() {
-        return "Reservation{" + "Id=" + Id + ", Date_debut=" + Date_debut + ", Date_fin=" + Date_fin + ", Nbre_nuits=" + Nbre_nuits + ", consommations=" + consommations + '}';
+        return "Reservation{" + "id=" + id + ", date_debut=" + date_debut + ", date_fin=" + date_fin + ", nbre_nuits=" + nbre_nuits + ", consommations=" + consommations + '}';
     }
-  
+
   
 
 }

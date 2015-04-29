@@ -5,16 +5,14 @@
  */
 package service;
 
-import bean.Chambre;
-import dao.AbstractDao;
+
+import dao.ChambreDao;
 
 /**
  *
  * @author EL
  */
-public class ChambreService extends AbstractDao<Chambre>{
+public class ChambreService extends ChambreDao{
     
-    public ChambreService() {
-        super(Chambre.class);
-    }
+    
 }

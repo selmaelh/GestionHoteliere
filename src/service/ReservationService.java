@@ -4,19 +4,21 @@
  * and open the template in the editor.
  */
 package service;
-
+ 
 import bean.Reservation;
-import dao.AbstractDao;
+import dao.ReservationDao;
 
 /**
  *
  * @author EL
  */
-public class ReservationService extends AbstractDao<Reservation>{
+public class ReservationService extends ReservationDao{
  
+    public void addReservation(Reservation r) {
     
-     public ReservationService() {
-        super(Reservation.class);
+        
+    
     }
+      
     
 }

@@ -5,20 +5,17 @@
  */
 package bean;
 
-import java.sql.Date;
-
 /**
  *
  * @author EL
  */
-public class Consommation {
-    
+public class Produit {
+ 
     private Integer id;
-    private String libelle;
-    private Date date;
-
+    private String libelle ;
+    private float prix;
     
-    public Consommation(){}
+    public Produit(){}
 
     public Integer getId() {
         return id;
@@ -36,17 +33,18 @@ public class Consommation {
         this.libelle = libelle;
     }
 
-    public Date getDate() {
-        return date;
+    public float getPrix() {
+        return prix;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setPrix(float prix) {
+        this.prix = prix;
     }
 
     @Override
     public String toString() {
-        return "Consommation{" + "id=" + id + ", libelle=" + libelle + ", date=" + date + '}';
+        return "Produit{" + "id=" + id + ", libelle=" + libelle + ", prix=" + prix + '}';
     }
-
+    
+    
 }

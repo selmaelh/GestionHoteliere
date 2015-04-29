@@ -5,18 +5,15 @@
  */
 package service;
 
-import bean.Consommation;
-import dao.AbstractDao;
+import dao.ConsommationDao;
 
 /**
  *
  * @author EL
  */
-public class ConsommationService extends AbstractDao<Consommation> {
+public class ConsommationService extends ConsommationDao {
 
-    public ConsommationService() {
-        super(Consommation.class);
-    }
+    
     
 }
 

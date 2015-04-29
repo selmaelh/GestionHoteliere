@@ -5,17 +5,15 @@
  */
 package service;
 
-import bean.Client;
-import dao.AbstractDao;
+
+import dao.ClientDao;
 
 /**
  *
  * @author EL
  */
-public class ClientService extends AbstractDao<Client> {
+public class ClientService extends ClientDao {
 
-    public ClientService() {
-        super(Client.class);
-    }
+     
     
 }

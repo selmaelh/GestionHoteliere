@@ -11,49 +11,49 @@ package bean;
  */
 public class Chambre {
     
-    private Integer Id;
-    private String Catégorie;
-    private String Tél;
-    private Integer Tarif;
+    private Integer id;
+    private String catégorie;
+    private String tél;
+    private Integer tarif;
     
     public Chambre(){}
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(Integer Id) {
-        this.Id = Id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getCatégorie() {
-        return Catégorie;
+        return catégorie;
     }
 
-    public void setCatégorie(String Catégorie) {
-        this.Catégorie = Catégorie;
+    public void setCatégorie(String catégorie) {
+        this.catégorie = catégorie;
     }
 
     public String getTél() {
-        return Tél;
+        return tél;
     }
 
-    public void setTél(String Tél) {
-        this.Tél = Tél;
+    public void setTél(String tél) {
+        this.tél = tél;
     }
 
     public Integer getTarif() {
-        return Tarif;
+        return tarif;
     }
 
-    public void setTarif(Integer Tarif) {
-        this.Tarif = Tarif;
+    public void setTarif(Integer tarif) {
+        this.tarif = tarif;
     }
 
     @Override
     public String toString() {
-        return "Chambre{" + "Id=" + Id + ", Cat\u00e9gorie=" + Catégorie + ", T\u00e9l=" + Tél + ", Tarif=" + Tarif + '}';
+        return "Chambre{" + "id=" + id + ", cat\u00e9gorie=" + catégorie + ", t\u00e9l=" + tél + ", tarif=" + tarif + '}';
     }
-    
-    
+
+   
 }

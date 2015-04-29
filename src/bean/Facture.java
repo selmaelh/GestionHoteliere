@@ -11,34 +11,31 @@ package bean;
  */
 public class Facture {
     
-    private Integer Id;
-    private float Total;
+    private Integer id;
+    private float total;
     
     public Facture(){}
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(Integer Id) {
-        this.Id = Id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public float getTotal() {
-        return Total;
+        return total;
     }
 
-    public void setTotal(float Total) {
-        this.Total = Total;
+    public void setTotal(float total) {
+        this.total = total;
     }
 
     @Override
     public String toString() {
-        return "Facture{" + "Id=" + Id + ", Total=" + Total + '}';
+        return "Facture{" + "id=" + id + ", total=" + total + '}';
     }
-    
-    
-    
 
     
 }
