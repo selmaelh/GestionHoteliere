@@ -23,7 +23,7 @@ public class ReservationView extends javax.swing.JFrame {
     ClientService clientService = new ClientService();
     ChambreService chambreService = new ChambreService();
     private List<Client> clients = new ArrayList<>();
-     private List<Chambre> chambres = new ArrayList<>();
+    private List<Chambre> chambres = new ArrayList<>();
     /**
      * Creates new form addReservation
      */
