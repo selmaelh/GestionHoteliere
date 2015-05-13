@@ -5,12 +5,21 @@
  */
 package bean;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  *
  * @author EL
  */
-public class Client {
+
+@Entity
+public class Client implements Serializable{
     
+    @Id
+    @GeneratedValue
     private Integer id;
     private String prenom;
     private String nom;

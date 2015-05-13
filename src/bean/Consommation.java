@@ -5,14 +5,21 @@
  */
 package bean;
 
+import java.io.Serializable;
 import java.sql.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author EL
  */
-public class Consommation {
+@Entity
+public class Consommation implements Serializable{
     
+    @Id
+    @GeneratedValue
     private Integer id;
     private String libelle;
     private Date date;

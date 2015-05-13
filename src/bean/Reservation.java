@@ -5,19 +5,30 @@
  */
 package bean;
 
+import java.io.Serializable;
 import java.sql.Date;
 import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 /**
  *
  * @author EL
  */
-public class Reservation {
-    
+
+@Entity
+public class Reservation implements Serializable{
+  
+  @Id
+  @GeneratedValue
   private Integer id;
   private Date date_debut;
   private Date date_fin;
   private Integer nbre_nuits;
+  
+  @OneToMany
   private List<Consommation> consommations;
   
   public Reservation(){}
