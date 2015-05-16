@@ -16,7 +16,7 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Client implements Serializable{
+public class Client{
     
     @Id
     @GeneratedValue

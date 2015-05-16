@@ -19,7 +19,7 @@ import javax.persistence.OneToMany;
  */
 
 @Entity
-public class Reservation implements Serializable{
+public class Reservation{
   
   @Id
   @GeneratedValue

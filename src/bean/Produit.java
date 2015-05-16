@@ -15,7 +15,7 @@ import javax.persistence.Id;
  * @author EL
  */
 @Entity
-public class Produit implements Serializable{
+public class Produit{
  
     @Id
     @GeneratedValue

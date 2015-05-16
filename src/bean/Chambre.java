@@ -16,7 +16,7 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Chambre implements Serializable {
+public class Chambre{
     @Id
     @GeneratedValue
     private Integer id;

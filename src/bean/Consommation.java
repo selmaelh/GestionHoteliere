@@ -10,20 +10,23 @@ import java.sql.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
  *
  * @author EL
  */
 @Entity
-public class Consommation implements Serializable{
+public class Consommation{
     
     @Id
     @GeneratedValue
     private Integer id;
     private String libelle;
     private Date date;
-
+    
+    @ManyToOne
+    private Consommation consommation;
     
     public Consommation(){}
 

@@ -6,13 +6,22 @@
 package service;
 
 
+import bean.Chambre;
 import dao.ChambreDao;
+import java.util.List;
 
 /**
  *
  * @author EL
  */
 public class ChambreService extends ChambreDao{
+    
+    
+    public List<Chambre> getAllChambers(){
+       
+        String hqlQuery ="from Chambre cbr where 1=1";
+        return load(hqlQuery);
+    }
     
     
 }

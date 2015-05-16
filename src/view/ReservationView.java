@@ -32,7 +32,7 @@ public class ReservationView extends javax.swing.JFrame {
         try {
             initComponents();
             initContent();
-            initComboClient();
+          //  initComboClient();
         } catch (Exception ex) {
             Logger.getLogger(ReservationView.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -41,11 +41,11 @@ public class ReservationView extends javax.swing.JFrame {
        private void initContent(){
         try {
             // Init JcomboBox clients
-             clients = clientService.findAll();
+             clients = clientService.getAllClients();
             for(Client client : clients)
              jComboBox1.addItem(client.getId());
             // Init JcomboBox chambres
-            chambres = chambreService.findAll();
+            chambres = chambreService.getAllChambers();
             for(Chambre chambre : chambres)
              jComboBox2.addItem(chambre.getId());
             
@@ -246,7 +246,7 @@ public class ReservationView extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

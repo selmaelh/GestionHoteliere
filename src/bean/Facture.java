@@ -16,7 +16,7 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Facture implements Serializable{
+public class Facture{
     
     @Id
     @GeneratedValue

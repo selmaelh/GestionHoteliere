@@ -6,7 +6,9 @@
 package service;
 
 
+import bean.Client;
 import dao.ClientDao;
+import java.util.List;
 
 /**
  *
@@ -14,6 +16,12 @@ import dao.ClientDao;
  */
 public class ClientService extends ClientDao {
 
+    
+    public List<Client> getAllClients(){
+       
+        String hqlQuery ="from Client cl where 1=1";
+        return load(hqlQuery);
+    }
      
     
 }

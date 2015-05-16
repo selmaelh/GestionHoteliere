@@ -54,4 +54,8 @@ public class AbstractDao<T> {
         return session.createCriteria("from " + entityClass.getSimpleName()).list();
     }
 
+    public List<T> load(String hql) {
+        Session session = NewHibernateUtil.getSessionFactory().openSession();
+        return session.createQuery(hql).list();
+    }
 }
